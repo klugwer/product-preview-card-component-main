@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format(truetype);
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Fraunces';
+    src: url(fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf) format(truetype);
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    font-family:'Montserrat';
+    font-size: 14px;
+}
+
+.card{
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+
+.left-container , 
+.right-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.image-product img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.right-container{
+    padding: 1.5rem;
+}
+
+.category{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+}
+
+h1{
+    font-family: 'Fraunces';
+    color: hsl(212, 21%, 14%);
+    font-size: 36px;
+    line-height: 1;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+.actual-price{
+    font-family: 'Fraunces';
+    color:hsl(158, 36%, 37%);
+    font-size: 36px;
+}
+
+.past-price{
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    margin-left: 1rem;
+    text-decoration: line-through;
+}
+
+.buy-button{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+
+    background-color: hsl(158, 36%, 37%);
+    height: 48px;
+    border-radius: 8px;
+
+    outline: none;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy-button img{
+    margin-right: 0.5rem;
+}
+
+.buy-button:hover{
+    background-color: hsl(158, 42%, 18%);
+    transform: scale(1.02);
+}
+
+.buy-button:active{
+    transform: scale(0.98);
+}
+
+.attribution{
+    margin-top: 1rem;
+    color: hsl(158, 42%, 18%);
+    font-family:'Montserrat';
+    font-size: 12px;
+}
